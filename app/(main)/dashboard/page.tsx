@@ -10,7 +10,6 @@ const Dashboard = () => {
 
   if (!isSignedIn) {
     redirect("/sign-in");
-    return null;
   }
 
   return (
