@@ -1,5 +1,5 @@
 "use client";
-import { SignOutButton, useUser } from "@clerk/nextjs";
+import { SignOutButton, UserButton, useUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
 const Dashboard = () => {
@@ -17,6 +17,8 @@ const Dashboard = () => {
     <div>
       <h1>Dashboard</h1>
       <p>Welcome, {user.firstName}</p>
+
+      <UserButton />
 
       <SignOutButton>Sign Out</SignOutButton>
     </div>
