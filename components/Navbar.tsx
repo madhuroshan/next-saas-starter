@@ -7,8 +7,8 @@ const Navbar = () => {
     <div>
       <nav className="flex py-4 items-center justify-between">
         <div className="flex items-center justify-center gap-2">
-          <HomeIcon />
-          <p className="text-primary font-bold">Capsulify</p>
+          <HomeIcon className="text-primary size-5" />
+          <p className="font-bold">Capsulify</p>
         </div>
 
         <Link href="/dashboard">

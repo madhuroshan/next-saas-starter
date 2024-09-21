@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-[1350px] px-4">
       <Navbar />
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 mb-6">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
@@ -31,21 +31,21 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-        <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
+      <section className="w-full py-12 md:py-24 lg:py-32 ">
+        <div className="container px-4 md:px-6 dark:bg-slate-400">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-primary">
             Features
           </h2>
           <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
             <div className="flex flex-col items-center space-y-2 border-gray-200 p-4 rounded-lg dark:border-gray-700">
-              <ShirtIcon className="h-10 w-10 text-orange-500" />
+              <ShirtIcon className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Outfit Generator</h3>
               <p className="text-gray-500 dark:text-gray-400 text-center">
                 Get personalized outfit suggestions based on your wardrobe.
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 border-gray-200 p-4 rounded-lg dark:border-gray-700">
-              <CameraIcon className="h-10 w-10 text-orange-500" />
+              <CameraIcon className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Virtual Try-On</h3>
               <p className="text-gray-500 dark:text-gray-400 text-center">
                 See how outfits look on you with our advanced virtual fitting
@@ -53,7 +53,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 border-gray-200 p-4 rounded-lg dark:border-gray-700">
-              <CalendarIcon className="h-10 w-10 text-orange-500" />
+              <CalendarIcon className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Outfit Planner</h3>
               <p className="text-gray-500 dark:text-gray-400 text-center">
                 Plan your outfits for the week or special occasions in advance.
@@ -64,18 +64,16 @@ export default function Home() {
       </section>
 
       <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 ">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
             Pricing
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:gap-12">
-            <div className="flex flex-col p-6 bg-white shadow-lg rounded-lg dark:bg-gray-850 justify-between border border-gray-200 dark:border-gray-700">
+            <div className="flex flex-col p-6 shadow-lg rounded-lg justify-between ">
               <div>
                 <h3 className="text-2xl font-bold text-center">Basic</h3>
                 <div className="mt-4 text-center text-gray-500 dark:text-gray-400">
-                  <span className="text-4xl font-bold text-orange-500">
-                    $9.99
-                  </span>{" "}
+                  <span className="text-4xl font-bold text-primary">$9.99</span>{" "}
                   / month
                 </div>
                 <ul className="mt-4 space-y-2">
@@ -93,16 +91,16 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <Button className="mt-6 bg-orange-500 text-white hover:bg-orange-600">
+              <Button className="mt-6 bg-primary text-white">
                 Get Started
               </Button>
             </div>
-            <div className="flex flex-col p-6 bg-orange-50 shadow-lg rounded-lg dark:bg-orange-900 justify-between border border-orange-200 dark:border-orange-700">
+            <div className="flex flex-col p-6 shadow-lg rounded-lg dark:bg-primtext-primary justify-between border border-primtext-primary dark:border-primtext-primary">
               <div>
                 <h3 className="text-2xl font-bold text-center">Premium</h3>
                 <div className="mt-4 text-center text-gray-500 dark:text-gray-400">
-                  <span className="text-4xl font-bold text-orange-500">
-                    $19.99
+                  <span className="text-4xl font-bold text-primary">
+                    $19.99+
                   </span>{" "}
                   / month
                 </div>
@@ -125,7 +123,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <Button className="mt-6 bg-orange-500 text-white hover:bg-orange-600">
+              <Button className="mt-6 bg-primary text-white">
                 Upgrade Now
               </Button>
             </div>
