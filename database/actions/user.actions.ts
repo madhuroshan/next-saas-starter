@@ -49,3 +49,17 @@ export const deleteUser = async (clerkId: string) => {
     throw new Error("Error deleting user");
   }
 };
+
+export const getUser = async (clerkId: string) => {
+  try {
+    await connectToDatabase();
+    const user = await User.findOne({ clerkId });
+    if (!user) {
+      throw new Error("User not found");
+    }
+    return user;
+  } catch (error) {
+    console.log(error);
+    throw new Error("Error getting user");
+  }
+};
